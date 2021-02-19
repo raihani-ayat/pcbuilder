@@ -1,0 +1,101 @@
+ .dropdown{
+     position: absolute;
+     top: 58px;
+     width: 300px;
+     transform: perspective(500px) translate3d(-250px,-20px,10px);
+     background: #242424;
+     border-radius: 10px;
+     padding: 1rem;
+     margin-top:-50px;
+     overflow: hidden;
+ }
+
+ .menu-item{
+     height: fit-content;
+     display: flex;
+     flex-direction: column;
+     color: #242424;
+     background:  rgba(105,161,134,1);
+     background: linear-gradient(90deg, rgba(105,161,134,1) 0%, rgba(190,253,223,1) 100%); 
+     align-items: center;
+     border-radius: 10px;
+     padding: 1rem;
+     margin-top: 5px;
+ }
+
+ .menu-item:hover{
+     color: black;
+    background:  rgba(190,253,223,1);
+    background: linear-gradient(90deg, rgba(190,253,223,1) 0%, rgba(190,253,223,1) 100%); 
+ }
+
+ .menu-item-button{
+    margin-top: 5px; 
+    margin-left: 40px;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 2px;
+    color: #22372d;
+    padding: 20px 20px;
+    transition: all 0.3s ease-out; 
+    border: none;
+    outline: none;
+ }
+
+ .menu-button:hover{
+     transform: scale(1.1);
+     background-color: black;
+ }
+
+ .close-button{
+     color: rgba(190,253,223,1);
+     font-size: 20px;
+     border: none;
+     outline: none;
+     background: transparent;
+ }
+
+ .description{
+    position: relative;
+    height: 80%;
+    width: 250px;
+    margin-left: 20px;
+    margin-right: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: transparent;
+    border-radius: 10px;
+    border: solid 1px #242424;
+    padding: 1rem;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+.label-class{
+    margin-top: 2px;
+    color: #242424;
+
+}
+
+.p-class{
+    color: #000000;
+
+}
+
+.choose{
+    margin-top: 5px; 
+    margin-left: 20px;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 2px;
+    color: #22372d;
+    padding: 8px 20px;
+    border: 1px solid #22372d;
+    transition: all 0.3s ease-out; 
+}
+
+.choose:hover{
+    transform: scale(1.1);
+    background: #e4fef2;
+}
+ 

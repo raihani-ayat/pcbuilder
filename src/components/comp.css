@@ -1,0 +1,232 @@
+.cardis {
+    padding: 4rem;
+    background: #fff;
+  }
+  
+  h1 {
+    color: #242424; 
+    text-align: center;
+  }
+  
+  .cardis__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .cardis__wrapper {
+    margin: 50px 0 45px;
+  }
+  
+  .cardis__items {
+    position: relative;
+    margin-bottom: 24px;
+    width: 900px;
+  }
+  
+  .cardis__item {
+    display: flex;
+    flex:1 ;
+    margin: 1rem 1rem;
+    border-radius: 10px;
+    position: default;
+  }
+  
+  .cardis__item_link {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .cardis__item__pic-wrap {
+    position: default;
+    width: 100%;
+    height: 100%;
+    padding-top: 0%;
+    overflow: hidden;
+  }
+  
+  .fade-img {
+    animation-name: fade-img;
+    animation-duration: 2s;
+  }
+  
+
+  
+  .cardis__item_img {
+    background:  rgba(105,161,134,1);
+    background: linear-gradient(90deg, rgba(105,161,134,1) 0%, rgba(190,253,223,1) 100%); 
+    position: default;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    transition: all 0.2s linear;
+  }
+
+  .button{
+     margin-top: 5px; 
+     margin-left: 30px;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 2px;
+    color: #22372d;
+    padding: 8px 20px;
+    border: 1px solid #22372d;
+    transition: all 0.3s ease-out;  
+  }
+
+  .cardis__item_img:hover {
+    transform: scale(1.1);
+    background: linear-gradient(90deg, rgba(105,161,134,1) 0%, rgba(105,161,134,1) 100%); 
+  }
+
+  .button:hover{
+    transform: scale(1.1);
+    background: #e4fef2;
+  }
+  
+  .cardis__item__info {
+    padding: 20px 30px 30px;
+  }
+  
+  .cardis__item__text {
+    text-align: center;  
+    color: #252e48;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .button-purchase{
+    margin-top: 5px; 
+    margin-bottom: 20px;
+    margin-left: 23rem;
+    background-color: transparent;
+    text-align: center;
+    border-radius: 2px;
+    color: #22372d;
+    padding: 10px 20px;
+    font-size: large;
+    border: 1px solid #22372d;
+    transition: all 0.3s ease-out;
+  }
+
+  .button-purchase:hover{
+    transform: scale(1.1);
+    background: #e4fef2;
+  }
+  
+  @media only screen and (min-width: 1200px) {
+    .content__blog__container {
+      width: 100%;
+    }
+
+    .button{
+       width: 80%;
+     }
+
+  }
+  
+  @media only screen and (min-width: 1024px) {
+    .cardis__items {
+      display: flex;
+      width: 900px;
+    }
+
+    
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    .cardis__item {
+      margin-left: 16rem;
+      margin-bottom: 2rem;
+      width: 400px;
+      
+    }
+
+    .button{
+        width: 80%;
+        margin-left: 2rem;
+      }
+  }
+
+  .Progress__container{
+    display: grid;
+    flex-flow: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 60%;
+    max-height: 700px;
+    height: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+    box-shadow: 0 6px 20px rgba(105, 107, 110, 0.17);
+    -webkit-filter: drop-shadow(0 6px 20px rgba(94, 95, 97, 0.017));
+    filter: drop-shadow(0 6px 20px rgba(84, 86, 88, 0.017));
+    border-radius: 10px;
+}
+
+.Progress__wrapper{
+    margin:  auto;
+    position: relative;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.Progress__h1{
+    color: #242424; 
+    text-align: center;
+}
+
+.Progress__h4{
+    margin-top: 20px;
+    text-align: center;  
+    color: #242424;
+    font-size: 28px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.Progress__p{
+    margin-top: 20px;
+    text-align: center;  
+    color: #252e48;
+    font-size: 24px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.diviser{
+
+    height: 300px;
+}
+
+.space{
+    height: 80px;
+}
+
+@media only screen and (max-width:1024px) {
+    .Progress__container{
+        width: 60%;
+        height: 60%;
+    }
+
+    .Progress__h4{
+        font-size: 20px;
+    }
+
+    .Progress__p{
+        font-size: 12px;
+    }
+}
